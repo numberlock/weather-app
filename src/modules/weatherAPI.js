@@ -8,7 +8,8 @@ export default async function getWeatherInfo() {
     console.log(geoInfo[0]);
 
     const openWeather = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${geoInfo[0].lat}&lon=${geoInfo[0].lon}&units=metric&appid=1bdf0cbef1c66e6d7ba6d40dab697a5b`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${geoInfo[0].lat}&lon=${geoInfo[0].lon}&units=metric&appid=1bdf0cbef1c66e6d7ba6d40dab697a5b`,
+      { mode: "cors" }
     );
     const weatherData = await openWeather.json();
     console.log(weatherData);
