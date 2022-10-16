@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  background-color: rgb(37, 37, 66);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+/* FROM */
+form {
+  display: flex;
+  gap: 0.5em;
+  margin-top: 5em;
+  background-color: rgba(255, 255, 255, 0.164);
+  padding: 1em;
+  border-radius: 10px;
+}
+
+input {
+  padding: 1em;
+}
+
+#text-input,
+#submit {
+  height: 4em;
+  border-radius: 10px;
+}
+
+#text-input {
+  border: 100px;
+  width: 30em;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#submit {
+  color: white;
+  width: 8em;
+  border: none;
+  background-color: rgb(231, 147, 79);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#submit:hover {
+  background-color: rgb(37, 37, 66);
+}
+
+#submit:active {
+  background-color: rgba(255, 255, 255, 0.164);
+}
+
+/* WEATHER */
+.weather {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 4em;
+  border-radius: 10px;
+}
+
+.temp-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20em;
+}
+
+.w-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.city-country {
+  color: rgb(231, 147, 79);
+  font-weight: bold;
+  font-size: 8em;
+}
+
+.description {
+  font-size: 2.5em;
+}
+
+.temp {
+  font-size: 6em;
+}
+
+.w-bot {
+  color: rgb(37, 37, 66);
+  display: flex;
+  justify-content: center;
+  gap: 16em;
+}
+
+.w-left,
+.w-right {
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.w-right {
+  text-align: end;
+}
+
+img {
+  border-radius: 100em;
+}
+
+.hidden {
+  display: none;
+}
