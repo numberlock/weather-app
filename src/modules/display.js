@@ -1,5 +1,5 @@
 export const selectIcon = function (data) {
-  const sendBack = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+  const sendBack = `/src/images/${data.weather[0].icon}@2x.png`;
 
   return sendBack;
 };
